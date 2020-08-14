@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành sử dụng vòng lặp while</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        let tong = 0;
+        let num = 0;
+        let hienthi = "";
+        while (num != -1){
+            num = parseInt(prompt("Enter your number: "));
+            hienthi  += num + "<br>";
+            tong += num;
+        }
+        document.getElementById("out").innerHTML = hienthi + "Tổng là " + tong ;
+
+
+    </script>
+</body>
+</html>
